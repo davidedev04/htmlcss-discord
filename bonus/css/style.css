@@ -1,0 +1,266 @@
+/* stili generali della pagina */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Whitney, ‘Helvetica Neue’, Helvetica, Arial, sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+button {
+    padding: 13px 15px;
+    border-radius: 30px;
+    border: none;
+    transition: 0.5s;
+    box-shadow: 0;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* stili header */
+
+header {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+}
+
+.menu {
+    padding: 10px;
+}
+
+nav {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.logo {
+    width: 25%;
+    display: flex;
+    justify-content: left;
+}
+
+.login {
+    width: 25%;
+    display: flex;
+    justify-content: right;
+}
+
+#riferimenti {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#riferimenti a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.content h1 {
+    color: white;
+    font-size: 55px;
+    padding: 40px 0;
+}
+
+.content p {
+    color: white;
+    font-size: 22px;
+    padding-bottom: 20px;
+    line-height: 1.4;
+}
+
+.content button {
+    font-size: 20px;
+    padding: 16px 32px;
+}
+
+#button-up button:last-child {
+    margin-left: 20px;
+    color: white;
+    background-color: #22272b;
+}
+
+/* stili contenuto centrale */
+
+.card {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 80px 0;
+}
+
+.div-wave{
+    margin-bottom: -4px;
+}
+
+.wave-1{
+    width: 100%;
+    transform: rotate(180deg);
+}
+
+.wave{
+    width: 100%;
+}
+
+.big {
+    width: 70%;
+}
+
+.small {
+    width: 30%;
+}
+
+section h1 {
+    font-size: 50px;
+    padding-bottom: 25px;
+    margin-top: 25px;
+}
+
+section p {
+    font-size: 20px;
+}
+
+.order {
+    order: -1;
+}
+
+.color {
+    background-color: rgb(243, 243, 243);
+}
+
+#big-card {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#avventura {
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+#big-card button {
+    font-size: 20px;
+    color: white;
+    padding: 16px 32px;
+    background-color: #8990ee;
+    margin-top: 25px;
+}
+
+/* stili footer */
+
+footer {
+    background-color: #22272b;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.bottom-right button {
+    background-color: #8990ee;
+    color: white;
+}
+
+.row {
+    width: 65%;
+    display: flex;
+    padding: 40px 0;
+    border-bottom: 1px solid #8990ee;
+}
+
+.column {
+    width: 16.25%;
+}
+
+.column ul {
+    list-style-type: none;
+}
+
+ul li {
+    color: white;
+    padding-bottom: 13px;
+}
+
+ul li:first-child {
+    color: #8990ee;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+.column-big {
+    width: 35%;
+    min-height: 420px;
+}
+
+.column-big h2 {
+    color: #8990ee;
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+
+.column-big h3,
+.icone {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.italy{
+    width: 30px;
+}
+
+.icone i {
+    padding-right: 20px;
+}
+
+.last {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
