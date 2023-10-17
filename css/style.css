@@ -1,74 +1,75 @@
 /* stili generali della pagina */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     font-family: Whitney, ‘Helvetica Neue’, Helvetica, Arial, sans-serif;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
-button{
+button {
     padding: 13px 15px;
     border-radius: 30px;
     border: none;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
 /* stili header */
 
-header{
+header {
     background-image: url(../img/jumbo.png);
     background-size: cover;
 }
 
-.menu{
+.menu {
     padding: 10px;
 }
 
-nav{
+nav {
     width: 65%;
     display: flex;
     align-items: center;
+    padding-top: 10px;
 }
 
-.logo{
+.logo {
     width: 25%;
     display: flex;
     justify-content: left;
 }
 
-.login{
+.login {
     width: 25%;
     display: flex;
     justify-content: right;
 }
 
-#riferimenti{
+#riferimenti {
     width: 50%;
     display: flex;
     justify-content: space-between;
 }
 
-#riferimenti a{
+#riferimenti a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-.content{
+.content {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -79,25 +80,25 @@ nav{
     margin-bottom: 50px;
 }
 
-.content h1{
+.content h1 {
     color: white;
     font-size: 55px;
     padding: 40px 0;
 }
 
-.content p{
+.content p {
     color: white;
     font-size: 22px;
     padding-bottom: 20px;
     line-height: 1.4;
 }
 
-.content button{
+.content button {
     font-size: 20px;
     padding: 16px 32px;
 }
 
-#button-up button:last-child{
+#button-up button:last-child {
     margin-left: 20px;
     color: white;
     background-color: #22272b;
@@ -105,7 +106,7 @@ nav{
 
 /* stili contenuto centrale */
 
-.card{
+.card {
     width: 65%;
     display: flex;
     flex-direction: row;
@@ -113,76 +114,124 @@ nav{
     margin: 80px 0;
 }
 
-.big{
+.big {
     width: 70%;
 }
 
-.small{
+.small {
     width: 30%;
 }
 
-.small h1{
+section h1 {
     font-size: 50px;
     padding-bottom: 25px;
     margin-top: 25px;
 }
 
-.small p{
+section p {
     font-size: 20px;
 }
 
-.order{
+.order {
     order: -1;
 }
 
-.color{
+.color {
     background-color: rgb(243, 243, 243);
 }
 
-#big-card{
+#big-card {
     width: 65%;
-    min-height: 600px;
-    background-color: green;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#avventura {
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+#big-card button {
+    font-size: 20px;
+    color: white;
+    padding: 16px 32px;
+    background-color: #8990ee;
+    margin-top: 25px;
 }
 
 /* stili footer */
 
-footer{
-    background-color: rgb(23, 23, 23);
+footer {
+    background-color: #22272b;
 }
 
-.bottom{
+.bottom {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
-    border-top: 1px solid white;
+    padding-bottom: 80px;
 }
 
-.row{
+.bottom-right button {
+    background-color: #8990ee;
+    color: white;
+}
+
+.row {
     width: 65%;
-    min-height: 450px;
-    background-color: red;
     display: flex;
- }
+    padding: 40px 0;
+    border-bottom: 1px solid #8990ee;
+}
 
- .column{
+.column {
     width: 16.25%;
-    min-height: 420px;
-    background-color: rgb(0, 194, 194);
-    border: 1px solid white;
- }
+}
 
- .column-big{
+.column ul {
+    list-style-type: none;
+}
+
+ul li {
+    color: white;
+    padding-bottom: 13px;
+}
+
+ul li:first-child {
+    color: #8990ee;
+}
+
+.column-big {
     width: 35%;
     min-height: 420px;
- }
+}
 
- .last{
+.column-big h2 {
+    color: #8990ee;
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+
+.column-big h3,
+.icone {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.icone i {
+    padding-right: 20px;
+}
+
+.last {
     width: 65%;
-    min-height: 60px;
-    background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: space-between;
- }
+}
